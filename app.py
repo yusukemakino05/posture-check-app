@@ -26,7 +26,7 @@ def calculate_posture_score(landmarks):
     shoulder_diff = abs(left_shoulder.y - right_shoulder.y)
     hip_diff = abs(left_hip.y - right_hip.y)
 
-    threshold = 0.03
+    threshold = 0.01
     issues = []
     if shoulder_diff > threshold:
         issues.append("肩の高さにゆがみがあります。")
